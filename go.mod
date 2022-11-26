@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/saasan/go-s2dir v0.0.0-20221126121107-b73c0ae1eb96
+	github.com/saasan/go-s2file v0.0.0-20221126123857-0351784bc2b5
 	github.com/saasan/go-term v0.0.0-20220813181131-2f20e98490b8
 )
 
