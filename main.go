@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/saasan/go-dir"
+	"github.com/saasan/go-s2dir"
 	"github.com/saasan/go-term"
 )
 
 func removeEmptyDir(dirname string) error {
-	dirs, _, err := dir.Read(dirname)
+	dirs, _, err := s2dir.Read(dirname)
 	if err != nil {
 		return err
 	}
@@ -23,7 +23,7 @@ func removeEmptyDir(dirname string) error {
 		}
 	}
 
-	isEmpty, err := dir.IsEmpty(dirname)
+	isEmpty, err := s2dir.IsEmpty(dirname)
 	if err != nil {
 		return err
 	}
